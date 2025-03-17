@@ -1,0 +1,3 @@
+/api/* https://api-sonic-svm-dev.nysm.work/api/:splat 200
+/avs/* http://37.27.56.233:1317/:splat 200
+/* /index.html 200

@@ -1,0 +1,170 @@
+{
+  "abi": [
+    { "type": "constructor", "inputs": [], "stateMutability": "nonpayable" },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "transferETH",
+      "inputs": [
+        { "name": "dstChainId", "type": "uint16", "internalType": "uint16" },
+        { "name": "recipient", "type": "address", "internalType": "address" }
+      ],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "withdraw",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "Bridge",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint16",
+          "indexed": false,
+          "internalType": "uint16"
+        },
+        {
+          "name": "",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "",
+          "type": "address",
+          "indexed": false,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916331790556101d3806100326000396000f3fe6080604052600436106100345760003560e01c80633ccfd60b146100395780638da5cb5b146100505780639f561b991461008c575b600080fd5b34801561004557600080fd5b5061004e61009f565b005b34801561005c57600080fd5b50600054610070906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b61004e61009a366004610151565b610102565b600080546040516001600160a01b039091169047908381818185875af1925050503d80600081146100ec576040519150601f19603f3d011682016040523d82523d6000602084013e6100f1565b606091505b50509050806100ff57600080fd5b50565b6040805161ffff841681523460208201526001600160a01b0383168183015290517ffdd78434126afe2ffee5aa40532ebb71fe2eaff4b3e1337e39ebd466252eaca19181900360600190a15050565b6000806040838503121561016457600080fd5b823561ffff8116811461017657600080fd5b915060208301356001600160a01b038116811461019257600080fd5b80915050925092905056fea26469706673582212202b5b117bfa94945d5ba0117f09628c3803f5b6555eb94d9ec369d1ff05f317ca64736f6c63430008140033",
+    "sourceMap": "65:501:0:-:0;;;115:49;;;;;;;;;-1:-1:-1;139:5:0;:18;;-1:-1:-1;;;;;;139:18:0;147:10;139:18;;;65:501;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600436106100345760003560e01c80633ccfd60b146100395780638da5cb5b146100505780639f561b991461008c575b600080fd5b34801561004557600080fd5b5061004e61009f565b005b34801561005c57600080fd5b50600054610070906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b61004e61009a366004610151565b610102565b600080546040516001600160a01b039091169047908381818185875af1925050503d80600081146100ec576040519150601f19603f3d011682016040523d82523d6000602084013e6100f1565b606091505b50509050806100ff57600080fd5b50565b6040805161ffff841681523460208201526001600160a01b0383168183015290517ffdd78434126afe2ffee5aa40532ebb71fe2eaff4b3e1337e39ebd466252eaca19181900360600190a15050565b6000806040838503121561016457600080fd5b823561ffff8116811461017657600080fd5b915060208301356001600160a01b038116811461019257600080fd5b80915050925092905056fea26469706673582212202b5b117bfa94945d5ba0117f09628c3803f5b6555eb94d9ec369d1ff05f317ca64736f6c63430008140033",
+    "sourceMap": "65:501:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;435:129;;;;;;;;;;;;;:::i;:::-;;89:20;;;;;;;;;;-1:-1:-1;89:20:0;;;;-1:-1:-1;;;;;89:20:0;;;;;;-1:-1:-1;;;;;178:32:1;;;160:51;;148:2;133:18;89:20:0;;;;;;;291:138;;;;;;:::i;:::-;;:::i;435:129::-;475:9;490:5;;:44;;-1:-1:-1;;;;;490:5:0;;;;508:21;;475:9;490:44;475:9;490:44;508:21;490:5;:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;474:60;;;552:4;544:13;;;;;;464:100;435:129::o;291:138::-;382:40;;;1121:6:1;1109:19;;1091:38;;401:9:0;1160:2:1;1145:18;;1138:34;-1:-1:-1;;;;;1208:32:1;;1188:18;;;1181:60;382:40:0;;;;;;;1079:2:1;382:40:0;;;291:138;;:::o;222:454:1:-;289:6;297;350:2;338:9;329:7;325:23;321:32;318:52;;;366:1;363;356:12;318:52;405:9;392:23;455:6;448:5;444:18;437:5;434:29;424:57;;477:1;474;467:12;424:57;500:5;-1:-1:-1;557:2:1;542:18;;529:32;-1:-1:-1;;;;;592:33:1;;580:46;;570:74;;640:1;637;630:12;570:74;663:7;653:17;;;222:454;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "owner()": "8da5cb5b",
+    "transferETH(uint16,address)": "9f561b99",
+    "withdraw()": "3ccfd60b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"Bridge\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"dstChainId\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"name\":\"transferETH\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"transferETH(uint16,address)\":{\"notice\":\"The main function for sending native token through bridge\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/ZKBridge.sol\":\"ZKBridge\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/ZKBridge.sol\":{\"keccak256\":\"0xaac78b8ebdd69e2f6cf16e5bc42772c26e1315b508414fd54684039ab9db2709\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://595fcd99c539e5db5163c12cd8fc2777cff3479bfc0024b98180a38bd14f342d\",\"dweb:/ipfs/QmeF3zbgGfzwg1k8FQBCq1Eb42x7dYePmprhhKE66nZFkW\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": { "version": "0.8.20+commit.a1b79de6" },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint16",
+              "name": "",
+              "type": "uint16",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Bridge",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            { "internalType": "address", "name": "", "type": "address" }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint16",
+              "name": "dstChainId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "transferETH"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdraw"
+        }
+      ],
+      "devdoc": { "kind": "dev", "methods": {}, "version": 1 },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "transferETH(uint16,address)": {
+            "notice": "The main function for sending native token through bridge"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": ["forge-std/=lib/forge-std/src/"],
+      "optimizer": { "enabled": true, "runs": 200 },
+      "metadata": { "bytecodeHash": "ipfs" },
+      "compilationTarget": { "src/ZKBridge.sol": "ZKBridge" },
+      "evmVersion": "paris",
+      "libraries": {}
+    },
+    "sources": {
+      "src/ZKBridge.sol": {
+        "keccak256": "0xaac78b8ebdd69e2f6cf16e5bc42772c26e1315b508414fd54684039ab9db2709",
+        "urls": [
+          "bzz-raw://595fcd99c539e5db5163c12cd8fc2777cff3479bfc0024b98180a38bd14f342d",
+          "dweb:/ipfs/QmeF3zbgGfzwg1k8FQBCq1Eb42x7dYePmprhhKE66nZFkW"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "id": 0
+}
