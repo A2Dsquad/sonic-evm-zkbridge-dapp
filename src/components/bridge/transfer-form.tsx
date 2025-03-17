@@ -145,7 +145,7 @@ export function TransferForm({
                       Fee: 1%
                     </FormDescription>
                     <FormDescription className="text-gray-400">
-                      Expected amount out: {(values.amount || 0) * 0.99} sendETH
+                      Expected amount out: {(values.amount || 0) * 0.99} senETH
                     </FormDescription>
                   </FormItem>
                 )}

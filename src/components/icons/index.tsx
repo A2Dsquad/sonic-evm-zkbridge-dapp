@@ -1,4 +1,3 @@
-export { default as IconAptos } from './Aptos';
 export { default as IconArrow } from './Arrow';
 export { default as IconArrowUp } from './ArrowUp';
 export { default as IconBgLogo } from './BgLogo';

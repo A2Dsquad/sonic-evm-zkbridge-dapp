@@ -5,7 +5,7 @@ import { useBridgeControllerQuery } from "@/services/queries";
 import { ArrowBigRightDash } from "lucide-react";
 import { zeroAddress } from "viem";
 import { useAccount } from "wagmi";
-import { IconAptos, IconCopy, IconEthereum } from "../icons";
+import { IconCopy, IconEthereum } from "../icons";
 
 export function TransferHistory({ focusedHash }: { focusedHash?: string }) {
   const { isConnected, address = zeroAddress } = useAccount();
@@ -57,8 +57,12 @@ export const HistoryCard = ({
           <ArrowBigRightDash className="w-6 h-6" />
           <p className="flex flex-row items-center gap-2 text-lg font-medium">
             {Number(history.amount) * 0.99}
-            <IconAptos className="w-5 h-5" />
-            <span className="font-normal text-base">sendETH</span>
+            <img
+              src="/sonic-svm.png"
+              alt="Sonic SVM"
+              className="w-8 h-8"
+            />
+            <span className="font-normal text-base">senETH</span>
           </p>
         </div>
       </div>
